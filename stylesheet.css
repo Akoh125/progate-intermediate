@@ -1,0 +1,184 @@
+/* CSSのリセット（消さないでください） */
+html,
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Hiragino Kaku Gothic ProN W3", sans-serif;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ここからCSSを書いていきましょう */
+header {
+  height: 60px;
+  background-color: rgba(34, 49, 52, 0.9);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 124px;
+  margin-top: 20px;
+}
+
+.header-right {
+  float: right;
+  background-color: rgba(255, 255, 255, 0.3);
+  transition: all 0.5s;
+}
+
+.header-right:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.header-right a {
+  color: white;
+  line-height: 65px;
+  padding: 0 25px;
+  display: block;
+}
+
+.top-wrapper {
+  background-image: url(https://prog-8.com/images/html/advanced/top.png);
+  padding: 180px 0px 100px 0px;
+  background-size: cover;
+  text-align: center;
+  color: white;
+}
+
+.top-wrapper h1 {
+  font-size: 45px;
+  opacity: 0.7;
+  letter-spacing: 5px;
+}
+
+.top-wrapper p {
+  margin-bottom: 15px;
+  opacity: 0.7;
+}
+
+.btn {
+  color: white;
+  display: inline-block;
+  opacity: 0.8;
+  padding: 8px 24px;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+.signup {
+  background-color: #239b76;
+  margin-bottom: 15px;
+}
+
+.facebook {
+  background-color: #3b5998;
+  margin-right: 10px;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+
+.fa {
+  margin-right: 5px;
+}
+
+.lesson-wrapper {
+  text-align: center;
+  height: 580px;
+}
+
+.heading {
+  font-weight: normal;
+  padding: 80px 0 50px;
+  /*padding-top:80px;とpadding-bottom:50px;*/
+  color: #5f5d60;
+}
+
+.lesson {
+  width: 25%; /*説明時の便宜上25％→24%*/
+  float: left;
+  /*border:1px solid red;*/
+}
+
+.lesson-icon {
+  position: relative;
+}
+
+.lesson-icon p {
+  /*border:1px solid;*/
+  position: absolute;
+  top: 90px;
+  width: 100%;
+  color: white;
+}
+
+.text-contents {
+  /*border:1px solid blue;*/
+  width: 80%;
+  margin: 0 auto;
+  font-size: 13px;
+  padding-top: 15px;
+  color: #b3aeb5;
+}
+
+.message-wrapper {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.message {
+  background: #5dca88;
+  box-shadow: 0 7px #1a7940;
+  padding: 15px 40px; /*.btnでpadding設定されているが上から下のコーディングが優先される*/
+}
+
+.message:active {
+  position: relative;
+  top: 7px;
+  box-shadow: none;
+}
+
+footer {
+  padding-top: 30px;
+}
+
+footer img {
+  width: 125px;
+}
+
+footer p {
+  color: #b3aeb5;
+  font-size: 12px;
+}
