@@ -60,9 +60,9 @@ header {
 
 .header-right a {
   color: white;
-  line-height: 65px;
+  line-height: 60px;
   padding: 0 25px;
-  display: block;
+  /*display:block;*/
 }
 
 .top-wrapper {
@@ -127,7 +127,7 @@ header {
 }
 
 .lesson {
-  width: 25%; /*説明時の便宜上25％→24%*/
+  width: 25%;
   float: left;
   /*border:1px solid red;*/
 }
